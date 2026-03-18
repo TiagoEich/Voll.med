@@ -169,17 +169,17 @@ POST /login
 ```json
 POST /medicos
 {
-  "nome": "Chris Cornell",
-  "email": "chris@vollmed.com",
-  "telefone": "11999999999",
+  "nome": "Maria Souza",
+  "email": "maria@vollmed.com",
+  "telefone": "51999999999",
   "crm": "123456",
   "especialidade": "CARDIOLOGIA",
   "endereco": {
     "logradouro": "Rua das Flores",
     "bairro": "Centro",
     "cep": "01310100",
-    "cidade": "Seattle",
-    "uf": "SP",
+    "cidade": "São Leopoldo",
+    "uf": "RS",
     "numero": "100"
   }
 }
