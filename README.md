@@ -104,8 +104,7 @@ consultas
 
 1. **Clone o repositório**
    ```bash
-   git clone https://github.com/tiagoeich/Java-e-Spring-Boot-Alura.git
-   cd Java-e-Spring-Boot-Alura
+   git clone https://github.com/tiagoeich/Voll.med.git
    ```
 
 2. **Crie o banco de dados no PostgreSQL**
