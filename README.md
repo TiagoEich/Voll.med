@@ -42,21 +42,23 @@ API REST desenvolvida em Java com Spring Boot durante o curso **Java e Spring Bo
 src/
 ├── main/
 │   ├── java/med/voll/api/
-│   │   ├── controller/         # Endpoints da API
+│   │   ├── controller/
 │   │   ├── domain/
-│   │   │   ├── consulta/       # Agendamento, cancelamento e validações
-│   │   │   ├── medico/         # Entidade e regras de médico
-│   │   │   ├── paciente/       # Entidade e regras de paciente
-│   │   │   ├── endereco/       # Endereço embutido
-│   │   │   └── usuario/        # Autenticação
+│   │   │   ├── consulta/
+│   │   │   ├── medico/
+│   │   │   ├── paciente/
+│   │   │   ├── endereco/
+│   │   │   └── usuario/
 │   │   └── infra/
-│   │       ├── exception/      # Tratamento global de erros
-│   │       ├── security/       # Filtro JWT e configurações de segurança
-│   │       └── springdoc/      # Configuração do Swagger
+│   │       ├── exception/
+│   │       ├── security/
+│   │       └── springdoc/
 │   └── resources/
 │       ├── application.properties
-│       └── db/migration/       # Scripts SQL do Flyway
-└── test/                       # Testes automatizados
+│       ├── application-prod.properties
+│       ├── application-test.properties
+│       └── db/migration/
+└── test/                    # Testes automatizados
 ```
 
 ---
@@ -112,11 +114,12 @@ consultas
    CREATE DATABASE vollmed;
    ```
 
-3. **Configure as credenciais no `application.properties`**
-   ```properties
-   spring.datasource.url=jdbc:postgresql://localhost:5432/vollmed
-   spring.datasource.username=seu_usuario
-   spring.datasource.password=sua_senha
+3. **Configure as variáveis de ambiente**
+
+   Antes de executar, defina as variáveis de ambiente na sua máquina:
+   - `DATASOURCE_URL` → ex: `jdbc:postgresql://localhost:5432/vollmed`
+   - `DATASOURCE_USERNAME` → seu usuário do PostgreSQL
+   - `DATASOURCE_PASSWORD` → sua senha do PostgreSQL
    ```
 
 4. **Execute o projeto**
